@@ -1,13 +1,19 @@
 #section1{
-        background-color: rgb(238, 0, 90);
+    
+        background:url(Spain.jpg); no repeat center fixed;
+        background-size:cover;
+
         }
         
 #section2{
-        background-color: rgb(44, 62, 80);
+        background:url(cali.jpg); no repeat center fixed;
+        background-size:cover;
+        
         }
         
 #section3{
-        background-color: rgb(51, 153, 204);
+        background:url(australuia.jpg); no repeat center fixed;
+        background-size:cover;
         }
         
 .section{
