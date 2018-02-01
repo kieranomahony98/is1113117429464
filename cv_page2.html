@@ -2,18 +2,103 @@
 <html>
     <head>
         <title> Education </title>
-        <link rel="stylesheet" href="cv_stylesheet.css" type="text/css"/>
+        <link rel="stylesheet" href="mystylesheet.css" type="text/css"/>
+    
         <!--Adding from bootstrap.com-->
     
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+         <style>
+            table {
+    border-collapse: collapse;
+    border-spacing: ;
+    width: 75%;
+    border: 1px solid #b2b2b2;
+}
+
+th, td {
+    text-align: left;
+    padding: px;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2
+}
+        </style>
     </head>
     <body>
+        <h1 class="heading">Education</h1>
+              <br/>
+                <ul>
+              <li><a href="homepage.html">Homepage</a></li>
+              <li><a href="Sport.html">Interests</a></li>
+              <li class="dropdown">
+              <a href="javascript:void(0)" class="dropbtn">CV</a>
+               <div class="dropdown-content">
+              <a href="cv_page1.html">Personal Details</a>
+              <a href="cv_page2.html">Education</a>
+              <a href="cv_page3.html">Work Experience</a>
+                </div>
+              </li>
+        </ul>
+        
         <p><strong>Secondary School:</strong> Colaise an Spioraid Naoimh </p>
         <p><strong>Course:</strong> Leaving Cert</p>
         <p><strong>Year:</strong> 2011-2017</p>
+
+        <table>
+          <tr>
+            <th>Subject:</th>
+            <th>Level:</th>
+            <th>Grade:</th>
+            <th>Points:</th>
+          </tr>
+          <tr>
+            <td>Maths</td>
+            <td>Higher</td>
+            <td>H2</td>
+            <td>113</td>
+          </tr>
+          <tr>
+            <td>Irish</td>
+            <td>Higher</td>
+            <td>H3</td>
+            <td>77</td>
+          </tr>
+          <tr>
+            <td>English</td>
+            <td>Higher</td>
+            <td>H3</td>
+            <td>77</td>
+          </tr>
+          <tr>
+              <td>Accounting</td>
+              <td>Higher</td>
+              <td>H1</td>
+              <td>100</td>
+         </tr>
+         <tr>
+             <td>Physics</td>
+             <td>Higher</td>
+             <td>H1</td>
+             <td>100</td>
+         </tr>
+         <tr>
+             <td>History</td>
+             <td>Higher</td>
+             <td>H1</td>
+             <td>100</td>
+         </tr>
+         <tr>
+             <td>DCG</td>
+             <td>Higher</td>
+             <td>H1</td>
+             <td>100</td>
+         </tr>
+        </table>
+        
         
         <br/>
         
@@ -23,7 +108,9 @@
         
         <br/><br/>
             
-        <a href=cv_page3.html class= "btn btn-dark"> Next </a>
+        <a href=cv_page3.html class= "btn btn-dark" style="float:right;"> Next </a>
+        <a href=cv_page1.html class= "btn btn-dark" style="float:left;"> Previous </a>
+
 
         </body>
 </html>
