@@ -54,11 +54,10 @@ li.dropdown {
 .dropdown:hover .dropdown-content {
     display: block;
 }
-button{
-    float:right;  
-    border-radius: 12px;
-    background-color:#b2b2b2;
-    padding: ;
 
+
+.button5 {
+    background-color: white;
+    color: black;
+    border: 2px solid #555555;
 }
-
