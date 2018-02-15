@@ -3,20 +3,26 @@
         background:url(Spain.jpg); no repeat center fixed;
         background-size:cover;
 
-        }
+}
         
 #section2{
-        background:url(austalia.jpg); no repeat center fixed;
+        background:url(australia.jpg); no repeat center fixed;
         background-size:cover;
         
-        }
+}
         
 #section3{
         background:url(cali.jpg); no repeat center fixed;
         background-size:cover;
-        }
+}
         
 .section{
         text-align: center;
         color:white;
+}
+.button1 {
+    background-color: white;
+    color: black;
+    border: 2px solid #555555;
+    
 }
