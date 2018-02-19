@@ -6,7 +6,45 @@
         <script  src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script type="text/javascript" src="cost_calc.js"></script>        
         <link rel="stylesheet" href="mystylesheet.css" type="text/css"/>
-
+        <style>
+            .Calculate{
+                background-color: #4CAF50; /* Green */
+                border: none;
+                color: white;
+                padding: 8px 16px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 12px;
+                margin: 4px 2px;
+                -webkit-transition-duration: 0.4s; /* Safari */
+                transition-duration: 0.4s;
+                cursor: pointer;
+            }    
+                .button1:hover {
+                background-color: #4CAF50;
+                color: white;
+                }
+            
+            .disabled {
+                opacity: 0.6;
+                cursor: not-allowed;
+            }
+            .inline{
+            display: inline-block;
+            width: 150px;
+            height: 55px;
+            margin: 10px;
+            }    
+            .inline1{
+            display: inline-block;
+            width: 150px;
+            height: 55px;
+            margin: 28px;
+            }    
+            
+            
+        </style>
     </head>
     <body>
         <h1 class="heading">eBusiness</h1>
@@ -33,7 +71,7 @@
                   <div class="dropdown-content">
                   <a href="Ebus1.php">Buisness 1</a>
                   <a href="Ebus2.php">Buisness 2</a>
-                  <a href="https://github.com/kieranomahony98/is1113117429464"> Github </a>
+                  <a href="https://github.com/kieranomahony98/is1113117429464/graphs/commit-activity4"> Github </a>
 
                   </div>
               </li>
@@ -49,10 +87,25 @@
             </label>
             
             <br/>
+            
+            <label for="Cloud9">
+                <input type="radio" id="cloud9" name="product" checked onClick="disablebtnProceed()">
+                Cloud 9 @ $200
+            </label>
+            
+            
+            <br/>
                         
             <label for="aws">
-                <input type = "radio" id="aws" name = "product" onClick="disablebtnProceed()"/>
+                <input type = "radio" id="aws" name="product" onClick="disablebtnProceed()"/>
                 AWS @ $300
+            </label>
+            <br/>
+            <label for="Gmail">
+                <input type = "radio" id="gmail" name="product" onClick="disablebtnProceed()"/>
+                Gmail @ $400
+                
+                
             </label>
             
             <br/>
@@ -60,23 +113,26 @@
             
             <label for="subtotal">
                 Sub Total: 
-                <input type="text" id="subtotal" value="0.00" readonly/>
+                <div="inline">
+                    <input type="text" id="subtotal" value="0.00" readonly/>
+                </div>
             </label>
             
             <br/>
             <label for="Total">
-            Total
-            <input type="text" id="total" value="0.00" readonly/>
+            Total:
+            <div class="inline1">
+                <input type="text" id="total" name="total" value="0.00" readonly/>
+            </div>
             </label>
-            
             <br/>
             
-            <button type="submit" id="btnproceed" disabled>Add to Shopping Cart</button>
+            <button class="disabled "type="submit" id="btnproceed" disabled>Add to Shopping Cart</button>
         </form>
         
         <br/>
         
-        <button onClick="calcSub()">Calculate Cost</button>
+        <button onClick="calcSub()" class="Calculate button1">Calculate Cost</button>
         <a role="button" href="Ebus1.php">Clear Choice</a>
     
     </body>

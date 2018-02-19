@@ -1,14 +1,36 @@
-
+<?php
+// Start the session
+session_start();
+?>
 <!DOCTYPE html>
 <html>
     <head>
-        
-        <title> Enter Details</title>
-        
+        <title>Enter Details</title>
         
         <!--jQuery-->
-        <link rel="stylesheet" href="mystylesheet.css" type="text/css"/>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script type="text/javascript" src="ebus2_validator.js"></script>
+        <link rel="stylesheet" href="mystylesheet.css" type="text/css"/>
+        <style>
+            .button {
+                background-color: white; 
+                color: black; 
+                border: 2px solid #008CBA;
+                padding: 8px 16px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 10px;
+                margin: 4px 2px;
+                -webkit-transition-duration: 0.4s; /* Safari */
+                transition-duration: 0.4s;
+                cursor: pointer;
+            }
+            .validate:hover {
+               background-color: #008CBA;
+                color: white;
+            }
+        </style>
     </head>
     
     <body>
@@ -37,7 +59,7 @@
                   <div class="dropdown-content">
                   <a href="Ebus1.php">Buisness 1</a>
                   <a href="Ebus2.php">Buisness 2</a>
-                  <a href="https://github.com/kieranomahony98/is1113117429464"> Github </a>
+                  <a href="https://github.com/kieranomahony98/is1113117429464/graphs/commit-activity"> Github </a>
 
                   </div>
               </li>
@@ -45,30 +67,33 @@
         </div>
             <br/><br/>
         
-        <h4>Please enter your payment details.</h4>
+        <h4>Please enter your payment details</h4>
         
-            <br />
-            
-            <form method = "POST" action = "Ebus3.php">
-                
-                <label for="user_pin">
-                     PIN 
-                </label>
-                
-                <input type="password" id="user_pin" placeholder="Card Pin" maxlength="4">
-                    
-                <button type="Submit" id="btnPurchase" disabled> 
-                    Proceed with Purchase 
-                </button>
-                
+        
+            <form action="Ebus3.php" method="POST">
+                    <label for="Name">Name: </label><br/>
+                    <input type="text" id="user_name" maxlength="20">
+                    <br/><br/>
+                    <label for="email">Email:</label>
+                    <br/>
+                    <input type="text" id="user_Email" maxlength=30>
+                    <br/><br/>
+                    <label for="user_pin">PIN:</label>
+                    <br/>
+                    <input type="password" id="user_pin" placeholder="Card PIN" maxlength="4">
+                <a href="Ebus3.php">
+                    <button type="submit" id="btnPurchase" disabled>Proceed with Purchase</button>
+                </a>
+              
             </form>
             
-            <br />
+            <br/>
+            <button class="button validate" onClick="validateDetails()">Validate</button>
             
-            <button onClick="validateDetails()"> Validate </button>
-        
-        <script type="text/javascript" src="ebus2_validator.js"></script>
-        
+            <?php
+            // Set session variables
+            $_SESSION["total"] = $_POST["total"];
+            ?>
         
     </body>
     
