@@ -127,13 +127,16 @@
             </label>
             <br/>
             
-            <button class="disabled "type="submit" id="btnproceed" disabled>Add to Shopping Cart</button>
+            <button type="submit" id="btnproceed" disabled>Add to Shopping Cart</button>
         </form>
         
         <br/>
         
         <button onClick="calcSub()" class="Calculate button1">Calculate Cost</button>
         <a role="button" href="Ebus1.php">Clear Choice</a>
-    
+        <br/><br/><br/><br/>
+        <footer>
+            <p>117429464 &copy 2018</p>
+        </footer>
     </body>
 </html>

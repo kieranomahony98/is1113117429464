@@ -94,7 +94,10 @@ session_start();
             // Set session variables
             $_SESSION["total"] = $_POST["total"];
             ?>
-        
+        <br/><br/><br/><br/>
+        <footer>
+            <p>117429464 &copy 2018</p>
+        </footer>
     </body>
     
     

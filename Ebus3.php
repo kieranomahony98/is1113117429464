@@ -13,5 +13,9 @@ session_start();
         // Echo session variables that were set on previous page
         echo "Total is " . $_SESSION["total"] . ".";
         ?>
+        <br/><br/><br/><br/>
+        <footer>
+            <p>117429464 &copy 2018</p>
+        </footer>
     </body>
 </html>
