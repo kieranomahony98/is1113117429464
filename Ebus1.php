@@ -118,6 +118,18 @@
                 </div>
             </label>
             
+            <br/><br/>
+            
+            <label for="discount">
+                Discount:
+                <input type="text" id="discount" name="total" value="0.00" readonly/>
+            </label>
+            <br/><br/>
+            <label for="vat">
+                VAT:
+                <input type="text" id="vat" name="vat" value="0.00" readonly/>
+            </label>
+            
             <br/>
             <label for="Total">
             Total:
@@ -126,8 +138,9 @@
             </div>
             </label>
             <br/>
-            
-            <button type="submit" id="btnproceed" disabled>Add to Shopping Cart</button>
+            <a href="Ebus2.php">
+                <button type="submit" id="btnProceed" disabled>Add to Shopping Cart</button>
+            </a>
         </form>
         
         <br/>
