@@ -12,6 +12,11 @@ session_start();
         <script type="text/javascript" src="ebus2_validator.js"></script>
         <link rel="stylesheet" href="mystylesheet.css" type="text/css"/>
         <style>
+            button{
+                padding: 8px 16px;
+                
+
+            }
             .button {
                 background-color: white; 
                 color: black; 
@@ -20,8 +25,8 @@ session_start();
                 text-align: center;
                 text-decoration: none;
                 display: inline-block;
-                font-size: 10px;
-                margin: 4px 2px;
+                font-size: 19px;
+                margin: 8px 4px;
                 -webkit-transition-duration: 0.4s; /* Safari */
                 transition-duration: 0.4s;
                 cursor: pointer;
@@ -29,6 +34,18 @@ session_start();
             .validate:hover {
                background-color: #008CBA;
                 color: white;
+            }
+            input {
+                width: 40%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                box-sizing: border-box;
+            }
+            .name{
+                width:20%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                box-sizing: border-box;
             }
         </style>
     </head>
@@ -54,15 +71,8 @@ session_start();
                   <a href="cv_page3.html">Work Experience</a>
                   </div>
               </li>
-                <li class="dropdown">
-                  <a href="javascript:void(0)" class="dropbtn">eBusiness</a>
-                  <div class="dropdown-content">
-                  <a href="Ebus1.php">Buisness 1</a>
-                  <a href="Ebus2.php">Buisness 2</a>
-                  <a href="https://github.com/kieranomahony98/is1113117429464/graphs/commit-activity"> Github </a>
+              <li><a href="Ebus1.php">eBusiness</a></li>
 
-                  </div>
-              </li>
             </ul>
         </div>
             <br/><br/>
@@ -71,16 +81,16 @@ session_start();
         
         
             <form action="Ebus3.php" method="POST">
-                    <label for="Name">Name: </label><br/>
-                    <input type="text" id="user_name" maxlength="20">
+                    <label for="Name">Full Name: </label><br/>
+                    <input type="text" id="user_name" name="user_name" maxlength="20" placeholder="First.." class="name"><input type="text" id=last_name name="last_name" maxlength=20 placeholder="Last.." class="name">
                     <br/><br/>
                     <label for="email">Email:</label>
                     <br/>
-                    <input type="text" id="user_Email" maxlength=30>
+                    <input type="text" id="user_Email" name="Email" maxlength="30" placeholder="Your Email.."> 
                     <br/><br/>
-                    <label for="user_pin">PIN:</label>
+                    <label for="user_pin" placeholder="Your PIN..">PIN:</label>
                     <br/>
-                    <input type="password" id="user_pin" placeholder="Card PIN" maxlength="4">
+                    <input type="password" id="user_pin" placeholder="Card PIN" maxlength="4" placeholder="Your Password..">
                 <a href="Ebus3.php">
                     <button type="submit" id="btnPurchase" disabled>Proceed with Purchase</button>
                 </a>
@@ -93,6 +103,9 @@ session_start();
             <?php
             // Set session variables
             $_SESSION["total"] = $_POST["total"];
+            $_SESSION["Email"] = $_POST["Email"];
+            $_SESSION["user_name"] = $_POST["user_name"];
+            $_SESSION["last_name"] = $_POST["last_name"];
             ?>
         <br/><br/><br/><br/>
         <footer>

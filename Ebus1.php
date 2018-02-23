@@ -20,30 +20,19 @@
                 -webkit-transition-duration: 0.4s; /* Safari */
                 transition-duration: 0.4s;
                 cursor: pointer;
-            }    
+                clear: left;
+            }   
                 .button1:hover {
                 background-color: #4CAF50;
                 color: white;
                 }
-            
-            .disabled {
-                opacity: 0.6;
-                cursor: not-allowed;
+            .inline {
+                width: 20%;
+                padding: 12px 20px;
+                margin: 8px 0px;
+                box-sizing: border-box;
             }
-            .inline{
-            display: inline-block;
-            width: 150px;
-            height: 55px;
-            margin: 10px;
-            }    
-            .inline1{
-            display: inline-block;
-            width: 150px;
-            height: 55px;
-            margin: 28px;
-            }    
-            
-            
+
         </style>
     </head>
     <body>
@@ -65,16 +54,8 @@
                   <a href="cv_page2.html">Education</a>
                   <a href="cv_page3.html">Work Experience</a>
                   </div>
-              </li>
-                                <li class="dropdown">
-                  <a href="javascript:void(0)" class="dropbtn">eBusiness</a>
-                  <div class="dropdown-content">
-                  <a href="Ebus1.php">Buisness 1</a>
-                  <a href="Ebus2.php">Buisness 2</a>
-                  <a href="https://github.com/kieranomahony98/is1113117429464/graphs/commit-activity4"> Github </a>
+              <li><a href="Ebus1.php">eBusiness</a></li>
 
-                  </div>
-              </li>
             </ul>
         </div>
             <br/><br/>
@@ -83,7 +64,7 @@
         <form method = "POST" action = "ebus2.php">
             <label for="salesforce">
                 <input type="radio" id="salesforce" name="product" checked onClick="disablebtnProceed()"/>
-                salesforce @ $1000
+                salesforce @ $100
             </label>
             
             <br/>
@@ -110,32 +91,31 @@
             
             <br/>
             <br/>
-            
             <label for="subtotal">
                 Sub Total: 
-                <div="inline">
-                    <input type="text" id="subtotal" value="0.00" readonly/>
-                </div>
+                <br/>
+                    <input type="text" id="subtotal" value="0.00" class="inline" readonly/>
             </label>
             
             <br/><br/>
             
             <label for="discount">
                 Discount:
-                <input type="text" id="discount" name="total" value="0.00" readonly/>
+                <br/>
+                <input type="text" id="discount" name="total" value="0.00" class="inline" readonly/>
             </label>
             <br/><br/>
             <label for="vat">
                 VAT:
-                <input type="text" id="vat" name="vat" value="0.00" readonly/>
+                <br/>
+                <input type="text" id="vat" name="vat" value="0.00" class="inline" readonly/>
             </label>
+            <br/><br/>
             
-            <br/>
             <label for="Total">
             Total:
-            <div class="inline1">
-                <input type="text" id="total" name="total" value="0.00" readonly/>
-            </div>
+            <br/>
+                <input type="text" id="total" name="total" value="0.00" class="inline" readonly/>
             </label>
             <br/>
             <a href="Ebus2.php">

@@ -17,32 +17,29 @@ function calcSub(){
         argSubTotal= 200;
     }
 
-    display(argSubTotal);
-    calcDiv(argSubTotal);
+    calcDisVatTotal(argSubTotal);
     
 }
-function calcDiv(parm1){
-  var num1, num2, num3;
+function calcDisVatTotal(parmSubTotal){
+  var num1, num2, discount, vat, totalPrice;
   num1 = .05
-  num2 = parm1 * num1;
-  document.getElementById("discount").value = num2;
-  num3 = parm1 - num2
-  calcVat(num3)
+  discount = parmSubTotal * num1;
+  document.getElementById("discount").value = discount;
+  num2 = parmSubTotal - discount;
+  vat = num2 * .1;
+  totalPrice = parmSubTotal-(discount + vat);
+  display(parmSubTotal,discount,vat,totalPrice);
 
 }
 
-function display(parm1){
+function display(parm1,parm2,parm3,parm4){
   document.getElementById("subtotal").value = parm1;
+  document.getElementById("discount").value = parm2;
+  document.getElementById("vat").value = parm3;
+  document.getElementById("total").value = parm4
   enablebtnProceed();
 }
 
-function calcVat(num1){
-  var vat, total;
-  vat = num1 * .1
-  document.getElementById("vat").value = vat
-  total = num1 - vat
-  document.getElementById("total").value = total
-}
 
 function enablebtnProceed(){
     $('#btnProceed').prop('disabled', false);
