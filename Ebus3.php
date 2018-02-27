@@ -28,6 +28,7 @@ session_start();
                       <a href="travel.html">Travel</a>
                       <a href="sport.html">Sport</a>
                       <a href="cloud.html">Cloud</a>
+                      <a href="cloudservices.html">Cloud Services</a>
                       </div>
                   </li>
                   <li class="dropdown">
@@ -38,13 +39,20 @@ session_start();
                       <a href="cv_page3.html">Work Experience</a>
                       </div>
                       </li>
-                      <li><a href="Ebus1.php">eBusiness</a></li>
+              <li class="dropdown">
+                  <a href="cloud.html" class="dropbtn">Cloud Vendor</a>
+                  <div class="dropdown-content">
+                  <a href="cloud.html">About Cloud</a>
+                  <a href="Ebus1.php">Product</a>
+                  </div>
+              </li>
     
                     </ul>
         </div>
         <h3 style=" text-align:center;">RECEIPT</h3>
-        <div class="receipt">      
-            <?php
+        <div class="receipt"> 
+            <p><strong>Congratulations on your purchase!!</strong><p>
+            <?php   
             // Echo session variables that were set on previous page
             echo "Name: ". $_POST["firstname"];
             echo " " . $_POST["lastname"] .  "<br/>"; 

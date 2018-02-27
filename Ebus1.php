@@ -56,6 +56,7 @@
                   <div class="dropdown-content">
                   <a href="travel.html">Travel</a>
                   <a href="sport.html">Sport</a>
+                  <a href="cloudservices.html">Cloud Services</a>
                   </div>
               </li>
               <li class="dropdown">
@@ -65,7 +66,13 @@
                   <a href="cv_page2.html">Education</a>
                   <a href="cv_page3.html">Work Experience</a>
                   </div>
-              <li><a href="Ebus1.php">eBusiness</a></li>
+              <li class="dropdown">
+                  <a href="cloud.html" class="dropbtn">Cloud Vendor</a>
+                  <div class="dropdown-content">
+                  <a href="cloud.html">About Cloud</a>
+                  <a href="Ebus1.php">Product</a>
+                  </div>
+              </li>
 
             </ul>
         </div class="form">

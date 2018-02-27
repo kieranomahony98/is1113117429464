@@ -59,6 +59,7 @@ session_start();
                   <div class="dropdown-content">
                   <a href="travel.html">Travel</a>
                   <a href="sport.html">Sport</a>
+                  <a href="cloudservices.html">Cloud Services</a>
                   </div>
               </li>
               <li class="dropdown">
@@ -69,13 +70,11 @@ session_start();
                   <a href="cv_page3.html">Work Experience</a>
                   </div>
               </li>
-                <li class="dropdown">
-                  <a href="javascript:void(0)" class="dropbtn">eBusiness</a>
+              <li class="dropdown">
+                  <a href="cloud.html" class="dropbtn">Cloud Vendor</a>
                   <div class="dropdown-content">
-                  <a href="Ebus1.php">Buisness 1</a>
-                  <a href="Ebus2.php">Buisness 2</a>
-                  <a href="https://github.com/kieranomahony98/is1113117429464/graphs/commit-activity"> Github </a>
-
+                  <a href="cloud.html">About Cloud</a>
+                  <a href="Ebus1.php">Product</a>
                   </div>
               </li>
             </ul>
