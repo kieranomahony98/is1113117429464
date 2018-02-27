@@ -2,11 +2,58 @@
 <html>
     <head>
         <title>Cloud Services</title>
-        <link rel="stylesheet" href="mystylesheet.css" type="text/css"/>
+        <link rel="stylesheet" href="cloud.css" type="text/css"/>
         <style>
+        .sec{
+            float:right;
+        }
+        strong{
+            font-size:17px;
+        }
+        body{
+            line-height:1.4em;  
+
+        }
             .Paas{
-                color:white;
+                color:black;
             }
+            .box{
+                  border: 1px solid green;
+                  width:70%;
+                  height:70%;
+            }
+            section.cloud {
+                float: left;
+                width: 659px;
+                border-right: 1px solid #eeeeee;
+                }
+            section.cloud1 {
+                float: right;
+                width: 659px;
+                border-right: 1px solid #eeeeee;
+                }
+            article {
+                overflow: auto;
+                width: 100%;
+                clear:left;
+                }
+            figure {
+                float: left;
+                width: 290px;
+                height: 220px;
+                padding: 5px;
+                margin: 20px;
+                border: 1px solid #eeeeee;
+                }
+            figcaption {
+                    font-size: 90%;
+                    text-align: left;
+                    
+                }
+                .text{
+                   border-style: solid;
+                   border-width: 2px;
+                }
         </style>
     </head>
     <body>
@@ -15,8 +62,8 @@
        
          <div class="back">
         <br/><br/>
-            <ul>
-              <li><a href="homepage.html">Homepage</a></li>
+            <ul class="ulnav">
+              <li class="nav"><a href="homepage.html">Homepage</a></li>
               <li class="dropdown">
                   <a href="javascript:void(0)" class="dropbtn">Interests</a>
                   <div class="dropdown-content">
@@ -34,13 +81,63 @@
                   <a href="cv_page3.html">Work Experience</a>
                   </div>
               </li>
-              <li><a href="Ebus1.php">eBusiness</a></li>
-              
+              <li class="nav"><a href="Ebus1.php">eBusiness</a></li>
             </ul>
         </div>
         <br/>
-        
-            <p><strong>Platform as a Service(PaaS)</strong> is a cloud computing service which allows users to devolp,run and manage to manage projects without the need of an APP or piece of software.<br/> There are three ways to use PaaS<ul class="PaaS"><li class="Paas">Public cloud service from a provider</li><li class="Paas">Where the user deploys the software with minimal configuration</li><li class="Paas">Laslty it can be hosted as a private service inside a firewall.</li></ul></p>
-    
+        <section class="cloud">
+            <article>
+                <figure>
+            <img src="SALES.png" style="float:"left" width="220" height="190"">
+                </figure>
+            <div class="text">
+                <p><strong>Software as a Service(SaaS)</strong> is a cloud computing service which allows users to devolp,run and manage projects using a website without the need of installing an application. It elimates the 
+                cost of hardware aquisation aswell as maintaince and aswell as other costs such as licensing. It also allows for greater scalabilty as the organisation will not need to purchase external storage.
+                 </p>
+            </div>
+            </article>
+            
+            <br/><br/><br/><br/><br/><br/>
+            
+            
+            <article>
+                <figure>
+            <img src="c9.png" style=" width="250" height="200"">
+                </figure>
+            <div class="text" stlye="float:"right";">
+                <p><strong>Platform  as a Service(PaaS)</strong> typically does not replace the IT infrastructure of a business.Instead its utilised to provide services such as application hosting or java development. 
+                as a results users can focus on creating and running applications rather then maintaining infrastructure and services. It will also allow teams to collaborate and work toghether despite being in different geographical regions.
+                 </p>
+            </div>
+            </article>
+        </section>
+        <section class="cloud1">
+            <article>
+                <figure>
+            <img src="c9.png" style=" width="250" height="200"">
+                </figure>
+            <div class="text" stlye="float:"right";">
+                <p><strong>Platform  as a Service(PaaS)</strong> typically does not replace the IT infrastructure of a business.Instead its utilised to provide services such as application hosting or java development. 
+                as a results users can focus on creating and running applications rather then maintaining infrastructure and services. It will also allow teams to collaborate and work toghether despite being in different geographical regions.
+                 </p>
+            </div>
+            </article>
+            
+            <br/><br/><br/><br/><br/><br/>
+
+            <article>
+                <figure>
+            <img src="c9.png" style=" width="250" height="200"">
+                </figure>
+            <div class="text" stlye="float:"right";">
+                <p><strong>Platform  as a Service(PaaS)</strong> typically does not replace the IT infrastructure of a business.Instead its utilised to provide services such as application hosting or java development. 
+                as a results users can focus on creating and running applications rather then maintaining infrastructure and services. It will also allow teams to collaborate and work toghether despite being in different geographical regions.
+                 </p>
+            </div>
+            </article>
+        </section>
+        <footer>
+            <p>117429464 &copy 2018</p>
+        </footer>
     </body>
 </html>

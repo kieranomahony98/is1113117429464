@@ -5,14 +5,14 @@
     color:#EDF5E1;
 
 }
-ul {
+.ulnav {
     list-style-type: none;
     margin: -0px;
     overflow: hidden;
     background-color: #2F4454;
 }
 
-li {
+.nav{
     float: left;
 }
 

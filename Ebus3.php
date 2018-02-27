@@ -23,7 +23,7 @@ session_start();
                 <ul>
                   <li><a href="homepage.html">Homepage</a></li>
                   <li class="dropdown">
-                      <a href="javascript:void(0)" class="dropbtn">Interests</a>
+                      <a href="sport.html" class="dropbtn">Interests</a>
                       <div class="dropdown-content">
                       <a href="travel.html">Travel</a>
                       <a href="sport.html">Sport</a>
@@ -46,11 +46,10 @@ session_start();
         <div class="receipt">      
             <?php
             // Echo session variables that were set on previous page
-            echo "Name: ". $_POST["user_name"];
-            echo " " . $_POST["last_name"] .  "<br/>"; 
-            echo "Email: " . $_POST["Email"] . "<br/>";
+            echo "Name: ". $_POST["firstname"];
+            echo " " . $_POST["lastname"] .  "<br/>"; 
+            echo "Email: " . $_POST["email"] . "<br/>";
             echo "Your total is: $" . $_SESSION["total"] . ".";
-            
             ?>
         </div> 
         <br/><br/><br/><br/>

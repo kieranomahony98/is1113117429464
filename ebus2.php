@@ -14,8 +14,6 @@ session_start();
         <style>
             button{
                 padding: 8px 16px;
-                
-
             }
             .button {
                 background-color: white; 
@@ -57,7 +55,7 @@ session_start();
             <ul>
               <li><a href="homepage.html">Homepage</a></li>
               <li class="dropdown">
-                  <a href="javascript:void(0)" class="dropbtn">Interests</a>
+                  <a href="sport.html" class="dropbtn">Interests</a>
                   <div class="dropdown-content">
                   <a href="travel.html">Travel</a>
                   <a href="sport.html">Sport</a>
@@ -71,8 +69,15 @@ session_start();
                   <a href="cv_page3.html">Work Experience</a>
                   </div>
               </li>
-              <li><a href="Ebus1.php">eBusiness</a></li>
+                <li class="dropdown">
+                  <a href="javascript:void(0)" class="dropbtn">eBusiness</a>
+                  <div class="dropdown-content">
+                  <a href="Ebus1.php">Buisness 1</a>
+                  <a href="Ebus2.php">Buisness 2</a>
+                  <a href="https://github.com/kieranomahony98/is1113117429464/graphs/commit-activity"> Github </a>
 
+                  </div>
+              </li>
             </ul>
         </div>
             <br/><br/>
@@ -82,11 +87,12 @@ session_start();
         
             <form action="Ebus3.php" method="POST">
                     <label for="Name">Full Name: </label><br/>
-                    <input type="text" id="user_name" name="user_name" maxlength="20" placeholder="First.." class="name"><input type="text" id=last_name name="last_name" maxlength=20 placeholder="Last.." class="name">
+                    <input type="text" name="firstname" id="user_name" maxlength="20" placeholder="First.." class="name">
+                    <input type="text" name="lastname"id="last_name" maxlength=20 placeholder="Last.." class="name">
                     <br/><br/>
                     <label for="email">Email:</label>
                     <br/>
-                    <input type="text" id="user_Email" name="Email" maxlength="30" placeholder="Your Email.."> 
+                    <input type="text" name="email" id="user_Email" maxlength="30" placeholder="Your Email..">
                     <br/><br/>
                     <label for="user_pin" placeholder="Your PIN..">PIN:</label>
                     <br/>
@@ -98,14 +104,12 @@ session_start();
             </form>
             
             <br/>
-            <button class="button validate" onClick="validateDetails()">Validate</button>
+            <button class="button validate" onClick="return validateDetails()">Validate</button>
             
             <?php
             // Set session variables
             $_SESSION["total"] = $_POST["total"];
-            $_SESSION["Email"] = $_POST["Email"];
-            $_SESSION["user_name"] = $_POST["user_name"];
-            $_SESSION["last_name"] = $_POST["last_name"];
+        
             ?>
         <br/><br/><br/><br/>
         <footer>
