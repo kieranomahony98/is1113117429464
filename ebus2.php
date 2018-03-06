@@ -5,12 +5,13 @@ session_start();
 <!DOCTYPE html>
 <html>
     <head>
+        <!--title to webpage-->
         <title>Enter Details</title>
-        
         <!--jQuery-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script type="text/javascript" src="ebus2_validator.js"></script>
         <link rel="stylesheet" href="mystylesheet.css" type="text/css"/>
+        <!-- embedded styling-->
         <style>
             button{
                 padding: 8px 16px;
@@ -49,9 +50,11 @@ session_start();
     </head>
     
     <body>
+        <!--heading sized 1-->
         <h1 class="heading">eBusiness</h1>
+        <!-- div tags to store nav bar-->
          <div class="back">
-        <br/><br/>
+            <br/><br/>
             <ul>
               <li><a href="homepage.html">Homepage</a></li>
               <li class="dropdown">
@@ -74,36 +77,37 @@ session_start();
                   <a href="cloud.html" class="dropbtn">Cloud Vendor</a>
                   <div class="dropdown-content">
                   <a href="cloud.html">About Cloud</a>
-                  <a href="Ebus1.php">Product</a>
+                  <a href="Ebus1.php">Products</a>
                   </div>
               </li>
             </ul>
         </div>
             <br/><br/>
-        
+        <!-- header sized 4-->
         <h4>Please enter your payment details</h4>
         
-        
-            <form action="Ebus3.php" method="POST">
-                    <label for="Name">Full Name: </label><br/>
-                    <input type="text" name="firstname" id="user_name" maxlength="20" placeholder="First.." class="name">
-                    <input type="text" name="lastname"id="last_name" maxlength=20 placeholder="Last.." class="name">
-                    <br/><br/>
-                    <label for="email">Email:</label>
-                    <br/>
-                    <input type="text" name="email" id="user_Email" maxlength="30" placeholder="Your Email..">
-                    <br/><br/>
-                    <label for="user_pin" placeholder="Your PIN..">PIN:</label>
-                    <br/>
-                    <input type="password" id="user_pin" placeholder="Card PIN" maxlength="4" placeholder="Your Password..">
-                <a href="Ebus3.php">
+        <!-- form to enter detials, posting results to ebus3-->
+        <form action="Ebus3.php" method="POST">
+            <label for="Name">Full Name: </label><br/>
+            <input type="text" name="firstname" id="user_name" maxlength="20" placeholder="First.." class="name">
+            <input type="text" name="lastname"id="last_name" maxlength=20 placeholder="Last.." class="name">
+                <br/><br/>
+            <label for="email">Email:</label>
+                <br/>
+            <input type="text" name="email" id="user_Email" maxlength="30" placeholder="Your Email..">
+                <br/><br/>
+            <label for="user_pin" placeholder="Your PIN..">PIN:</label>
+                <br/>
+            <input type="password" id="user_pin" placeholder="Card PIN" maxlength="4" placeholder="Your Password..">
+            <a href="Ebus3.php">
                     <button type="submit" id="btnPurchase" disabled>Proceed with Purchase</button>
-                </a>
+            </a>
               
-            </form>
+        </form>
             
-            <br/>
-            <button class="button validate" onClick="return validateDetails()">Validate</button>
+                <br/>
+        <!-- button which runs validatedetails function-->
+        <button class="button validate" onClick="return validateDetails()">Validate</button>
             
             <?php
             // Set session variables

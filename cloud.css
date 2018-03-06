@@ -1,3 +1,4 @@
+/* using the heading class to add design*/
 .heading{
     background-color: #2F4454;
     text-align: center;
@@ -5,16 +6,21 @@
     color:#EDF5E1;
 
 }
+/* using the ul tag to add design*/
+
 ul {
     list-style-type: none;
     margin: -0px;
     overflow: hidden;
     background-color: #2F4454;
 }
+/* using the nav class to add design*/
 
 .nav{
     float: left;
 }
+
+/* using the li,a tags and dropbtn class to add design*/
 
 li a, .dropbtn {
     display: inline-block;
@@ -23,14 +29,17 @@ li a, .dropbtn {
     padding: 0px 20px 20px 10px;
     text-decoration: none;
 }
+/* using the li,a tags and dropdown:hover class to add design*/
 
 li a:hover, .dropdown:hover .dropbtn {
     background-color: grey;
 }
+/* using the li.dropdown tags and dropbtn class to add design*/
 
 li.dropdown {
     display: inline-block;
 }
+/* styling the dropdown-content class */
 
 .dropdown-content {
     display: none;

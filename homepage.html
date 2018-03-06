@@ -1,27 +1,54 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <!--adding a title to the webpage-->
+        
         <title> IS113 Project</title>
+        
+        <!--importing an external stylesheet-->
         <link rel="stylesheet" href="mystylesheet.css" type="text/css"/>
+        <!--using an embedded stylesheet-->
         <style>
-            img{
+            .images3{
                 float:left;
                 margin-bottom:50px;
             }
             h2{
                 text-align: center;
                 color:#2F4454;
-                
-            
+            }
+            .marquee div { 
+                display:block;
+                color:#2F4454;
+                width:100%;
+                height:100%;
+                position: absolute;
+                overflow:hidden;
+                animation:marquee 25s linear infinite;
+            }
+            .marquee span {
+                float:left;
+                width: 100%;
+                font-family: verdana;
+                font-size: 25px;
+                color:#2F4454;
+                text-align: center;
+    
+          
+            }
+            @keyframes marquee{
+                100%{left:100%;}
+                0% {left:0;}
             }
         </style>
     </head>
     <body>
         <h1 class="heading">IS113 Project</h1>
-        
+        <!--opening up a div which stores a unordered list tag to store my nav bar-->
         <div class="back">
         <br/><br/>
             <ul>
+                
               <li><a href="homepage.html">Homepage</a></li>
               <li class="dropdown">
                   <a href="sport.html" class="dropbtn">Interests</a>
@@ -31,6 +58,7 @@
                   <a href="cloudservices.html">Cloud Services</a>
                   </div>
               </li>
+              <!--adding the drop down storing the cv pages and after the eBus pages-->
               <li class="dropdown">
                   <a href="cv_page1.html" class="dropbtn">CV</a>
                   <div class="dropdown-content">
@@ -42,8 +70,9 @@
               <li class="dropdown">
                   <a href="cloud.html" class="dropbtn">Cloud Vendor</a>
                   <div class="dropdown-content">
+                  <a href="about.html">SCS LTD</a>
                   <a href="cloud.html">About Cloud</a>
-                  <a href="Ebus1.php">Product</a>
+                  <a href="Ebus1.php">Products</a>
                   </div>
               </li>
 
@@ -51,27 +80,43 @@
                 </div>
                  
         <br/><br/>
-        <marquee behavior="scroll" direction="right">Welcome!</marquee>
         <br/><br/>
+        <!--adding animated moving text-->
+        <div class="marquee">
+            <div>
+                <span>Welcome to my Website!</span>
+            </div>
+        </div>
+                <br/><br/>
+        <br/><br/>
+        <!--importing images of github and heroku inside anchor tags to repestive webpages-->
         <div class="images">
             <a href="https://github.com/kieranomahony98/is1113117429464/graphs/commit-activity">
-                <img src="githublogo.png"  width="200" height="150" align="middle">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/2000px-Octicons-mark-github.svg.png"  width="200" height="150" align="middle" class="images3">
             </a>
             <a href="https://html-kom.herokuapp.com">
-                <img src="herokulogo.png"  width="200" height="150" style="float:middle;" align="middle">
+                <img src="herokulogo.png"  width="200" height="150" style="float:middle;" align="middle" class="images3">
             </a>
         </div>
         
-        <br/><br/><br/><br/><br/><br/><br/><br/>        <br/><br/><br/><br/><br/><br/><br/><br/>
+        <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 
+        <!--importing images of resources i used,inside anchor tags to respective webpages-->
 
         <h2>Resources used throughout my project</h2>
-        <img src="https://vignette.wikia.nocookie.net/howtoprogram/images/c/ce/W3Schools.png/revision/latest?cb=20130601232401">
-        <img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/youtube-256.png" class="images1">
+        <div class="images">
+        <a href="https://www.w3schools.com/">
+            <img src="https://vignette.wikia.nocookie.net/howtoprogram/images/c/ce/W3Schools.png/revision/latest?cb=20130601232401" align=middle>
+        </a>
+        <a href="https://www.youtube.com/">
+            <img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/youtube-256.png" height=200 class="images3">
+        </a>
+        </div>
         
         
 
         <br/><br/><br/><br/>
+        <!-- adding a footer to the webpage-->
         <footer>
             <p>117429464 &copy 2018</p>
         </footer>

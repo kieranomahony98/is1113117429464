@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <!--adding a title-->
         <Title>Select Product</Title>
         <!--jQuery-->
         <script  src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -46,9 +47,10 @@
         </style>
     </head>
     <body>
+        <!--adding a header sized 1-->
         <h1 class="heading">eBusiness</h1>
-            
-             <div class="back">
+        <!--div tags to store my nav bar-->
+        <div class="back">
             <ul>
               <li><a href="homepage.html">Homepage</a></li>
               <li class="dropdown">
@@ -60,7 +62,7 @@
                   </div>
               </li>
               <li class="dropdown">
-                  <a href="javascript:void(0)" class="dropbtn">CV</a>
+                  <a href="cv_page1.html" class="dropbtn">CV</a>
                   <div class="dropdown-content">
                   <a href="cv_page1.html">Personal Details</a>
                   <a href="cv_page2.html">Education</a>
@@ -70,17 +72,20 @@
                   <a href="cloud.html" class="dropbtn">Cloud Vendor</a>
                   <div class="dropdown-content">
                   <a href="cloud.html">About Cloud</a>
-                  <a href="Ebus1.php">Product</a>
+                  <a href="Ebus1.php">Products</a>
                   </div>
               </li>
 
             </ul>
+        </div>
         </div class="form">
                 <br/><br/>
-            <div>
-                <h4>Select a Product</h4>
+        <div>
+            <!--header sized 4-->
+            <h4>Select a Product</h4>
                 <br/>
-                <article>
+            <article>
+                <!-- form to calcualte cost and post values to ebus2-->
                 <form method = "POST" action = "ebus2.php">
                     <label for="salesforce">
                         <input type="radio" id="salesforce" name="product" checked onClick="disablebtnProceed()"/>
@@ -144,10 +149,10 @@
                 </form>
                 
                 <br/>
-                
+                <!--button which runs function caclSub-->
                 <button onClick="calcSub()" class="Calculate button1">Calculate Cost</button>
                 <a role="button" href="Ebus1.php">Clear Choice</a>
-        </article>
+            </article>
         </div>
         <br/><br/><br/><br/>
         <footer>
