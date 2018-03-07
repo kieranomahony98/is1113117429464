@@ -1,23 +1,49 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8">
         <title> Education </title>
         <link rel="stylesheet" href="mystylesheet.css" type="text/css"/>
-    
-        <!--Adding from bootstrap.com-->
-    
-   
          <style>
-        .Previous{
-            padding:20px;
-        }
-        .button{
-            padding:20px;
-        }
+            .button {
+                background-color: #4CAF50; /* Green */
+                border: none;
+                color: white;
+                padding: 16px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                -webkit-transition-duration: 0.4s; /* Safari */
+                transition-duration: 0.4s;
+                cursor: pointer;
+               
+            }
+            .button5 {
+                background-color: white; 
+                color: black; 
+                border: 2px solid #2F4454;
+                float:right;
+            }
+
+            .button5:hover {
+                background-color: #2F4454;
+                color: white;
+            }
+            .button3 {
+                background-color: white; 
+                color: black; 
+                border: 2px solid #A84C00;
+                float:left;
+            }
+            .button3:hover {
+                background-color: #A84C00;
+                color: white;
+            }
         
             table {
     border-collapse: collapse;
-
     width: 75%;
     border: 1px solid #b2b2b2;
 }
@@ -56,6 +82,7 @@ tr:nth-child(even) {
               <li class="dropdown">
                   <a href="cloud.html" class="dropbtn">Cloud Vendor</a>
                   <div class="dropdown-content">
+                  <a href="about.html">SCS LTD</a>
                   <a href="cloud.html">About Cloud</a>
                   <a href="Ebus1.php">Products</a>
                   </div>
@@ -129,15 +156,15 @@ tr:nth-child(even) {
 
         
         <br/><br/>
-            <a href="cv_page3.html">
-            <button class="button button5">Next</button>  
-            </a>
-            <a href="cv_page1.html">
-            <button class="Previous">Previous</button>    
-            </a>
+            <form action="cv_page3.html">
+                <button class="button button5">Next</button>  
+            </form>
+            <form action="cv_page1.html">
+                <button class="button button3">Previous</button>    
+            </form>
         <br/><br/><br/><br/>
         <footer>
-            <p>117429464 &copy 2018</p>
+            <p>117429464 &#169; 2018</p>
         </footer>
 
 

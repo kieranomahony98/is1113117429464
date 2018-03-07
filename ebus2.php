@@ -5,6 +5,7 @@ session_start();
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8">
         <!--title to webpage-->
         <title>Enter Details</title>
         <!--jQuery-->
@@ -66,7 +67,7 @@ session_start();
                   </div>
               </li>
               <li class="dropdown">
-                  <a href="javascript:void(0)" class="dropbtn">CV</a>
+                  <a href="cv_page1.html" class="dropbtn">CV</a>
                   <div class="dropdown-content">
                   <a href="cv_page1.html">Personal Details</a>
                   <a href="cv_page2.html">Education</a>
@@ -76,6 +77,7 @@ session_start();
               <li class="dropdown">
                   <a href="cloud.html" class="dropbtn">Cloud Vendor</a>
                   <div class="dropdown-content">
+                  <a href="about.html">SCS LTD</a>
                   <a href="cloud.html">About Cloud</a>
                   <a href="Ebus1.php">Products</a>
                   </div>
@@ -88,21 +90,20 @@ session_start();
         
         <!-- form to enter detials, posting results to ebus3-->
         <form action="Ebus3.php" method="POST">
-            <label for="Name">Full Name: </label><br/>
+            <label for="user_name">Full Name: </label><br/>
             <input type="text" name="firstname" id="user_name" maxlength="20" placeholder="First.." class="name">
-            <input type="text" name="lastname"id="last_name" maxlength=20 placeholder="Last.." class="name">
+            <input type="text" name="lastname" id="last_name" maxlength=20 placeholder="Last.." class="name">
                 <br/><br/>
-            <label for="email">Email:</label>
+            <label for="user_Email">Email:</label>
                 <br/>
             <input type="text" name="email" id="user_Email" maxlength="30" placeholder="Your Email..">
                 <br/><br/>
-            <label for="user_pin" placeholder="Your PIN..">PIN:</label>
+            <label for="user_pin">PIN:</label>
                 <br/>
-            <input type="password" id="user_pin" placeholder="Card PIN" maxlength="4" placeholder="Your Password..">
-            <a href="Ebus3.php">
+            <input type="password" id="user_pin" placeholder="Card PIN" maxlength="4">
+            
                     <button type="submit" id="btnPurchase" disabled>Proceed with Purchase</button>
-            </a>
-              
+             
         </form>
             
                 <br/>
@@ -116,7 +117,7 @@ session_start();
             ?>
         <br/><br/><br/><br/>
         <footer>
-            <p>117429464 &copy 2018</p>
+            <p>117429464 &#169; 2018</p>
         </footer>
     </body>
     

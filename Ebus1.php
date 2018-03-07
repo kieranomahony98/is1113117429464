@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8">
         <!--adding a title-->
         <Title>Select Product</Title>
         <!--jQuery-->
@@ -71,6 +72,7 @@
               <li class="dropdown">
                   <a href="cloud.html" class="dropbtn">Cloud Vendor</a>
                   <div class="dropdown-content">
+                  <a href="about.html">SCS LTD</a>
                   <a href="cloud.html">About Cloud</a>
                   <a href="Ebus1.php">Products</a>
                   </div>
@@ -78,7 +80,7 @@
 
             </ul>
         </div>
-        </div class="form">
+        
                 <br/><br/>
         <div>
             <!--header sized 4-->
@@ -94,7 +96,7 @@
                     
                     <br/>
                     
-                    <label for="Cloud9">
+                    <label for="cloud9">
                         <input type="radio" id="cloud9" name="product" checked onClick="disablebtnProceed()">
                         Cloud 9 @ $200
                     </label>
@@ -107,7 +109,7 @@
                         AWS @ $300
                     </label>
                     <br/>
-                    <label for="Gmail">
+                    <label for="gmail">
                         <input type = "radio" id="gmail" name="product" onClick="disablebtnProceed()"/>
                         Gmail @ $400
                         
@@ -137,15 +139,13 @@
                     </label>
                     <br/><br/>
                     
-                    <label for="Total">
+                    <label for="total">
                     Total:
                     <br/>
                         <input type="text" id="total" name="total" value="0.00" class="inline" readonly/>
                     </label>
                     <br/>
-                    <a href="Ebus2.php">
                         <button type="submit" id="btnProceed" disabled>Add to Shopping Cart</button>
-                    </a>
                 </form>
                 
                 <br/>
@@ -156,7 +156,7 @@
         </div>
         <br/><br/><br/><br/>
         <footer>
-            <p>117429464 &copy 2018</p>
+            <p>117429464 &#169; 2018</p>
         </footer>
     </body>
 </html>

@@ -5,6 +5,7 @@ session_start();
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8">
         <!-- adding a title to webpage-->
         <title>RECEIPT</title>
         <!-- importing external stylesheet-->
@@ -38,7 +39,7 @@ session_start();
                       </div>
                   </li>
                     <li class="dropdown">
-                      <a href="javascript:void(0)" class="dropbtn">CV</a>
+                      <a href="cv_page1.html" class="dropbtn">CV</a>
                       <div class="dropdown-content">
                       <a href="cv_page1.html">Personal Details</a>
                       <a href="cv_page2.html">Education</a>
@@ -48,6 +49,7 @@ session_start();
                    <li class="dropdown">
                         <a href="cloud.html" class="dropbtn">Cloud Vendor</a>
                         <div class="dropdown-content">
+                        <a href="about.html">SCS LTD</a>
                         <a href="cloud.html">About Cloud</a>
                         <a href="Ebus1.php">Products</a>
                         </div>
@@ -68,7 +70,7 @@ session_start();
         </div> 
         <br/><br/><br/><br/>
         <footer>
-            <p>117429464 &copy 2018</p>
+            <p>117429464 &#169; 2018</p>
         </footer>
     </body>
 </html>
